@@ -17,6 +17,11 @@ export default function Textform(props) {
         
         setText(newtext);
     }
+    function clear(){
+        let newtext=''
+
+        setText(newtext);
+    }
     return (
         <>
         <div>
@@ -25,7 +30,7 @@ export default function Textform(props) {
              <textarea className="form-control mx-1" onChange={handle} value={text} id="exampleFormControlTextarea1" rows="8"></textarea>
             <button className="btn btn-primary mx-1" onClick={upper}>Convert to uppercase</button>
             <button className="btn btn-primary mx-1" onClick={lower}>Convert to Lowercase</button>
-            
+            <button className="btn btn-primary mx-1" onClick={clear}>Clear</button>
             </div>
             <div className='container my-3'>
             <h2>Your text summary</h2>
